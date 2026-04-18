@@ -1,0 +1,101 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(28, 17, 12, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  padding: 0 2rem;
+}
+
+.navbar-inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 72px;
+}
+
+.navbar-logo {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: 1.25rem;
+  color: var(--primary);
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar-link {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--on-surface-variant);
+  transition: color 0.2s;
+  position: relative;
+}
+
+.navbar-link:hover,
+.navbar-link.active {
+  color: var(--secondary-bold);
+}
+
+.navbar-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--secondary-bold);
+  border-radius: 1px;
+}
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navbar-search {
+  color: var(--on-surface-variant);
+  padding: 0.5rem;
+  transition: color 0.2s;
+}
+
+.navbar-search:hover {
+  color: var(--on-surface);
+}
+
+.navbar-subscribe {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  background: var(--primary-bold);
+  color: #fff;
+  padding: 0.6rem 1.4rem;
+  border-radius: var(--radius-full);
+  transition: transform 0.2s, background 0.2s;
+}
+
+.navbar-subscribe:hover {
+  background: var(--primary);
+  color: var(--on-primary);
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none;
+  }
+  .navbar-inner {
+    height: 60px;
+  }
+}

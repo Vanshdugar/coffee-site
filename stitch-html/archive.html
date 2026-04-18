@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Sonic Roast - Archive</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&amp;family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary": "#d4c4b2",
+                        "on-surface-variant": "#d5c3bd",
+                        "error-container": "#93000a",
+                        "tertiary-container": "#3c3226",
+                        "on-secondary": "#00363d",
+                        "surface-container-lowest": "#160c07",
+                        "on-primary-fixed-variant": "#7a3000",
+                        "inverse-primary": "#9f4200",
+                        "on-error": "#690005",
+                        "surface-dim": "#1c110c",
+                        "outline": "#9d8d88",
+                        "secondary-fixed": "#9cf0ff",
+                        "tertiary-fixed": "#f1e0cd",
+                        "surface-container-highest": "#40322c",
+                        "on-primary-fixed": "#341100",
+                        "secondary-container": "#00e3fd",
+                        "on-tertiary-fixed": "#231a0f",
+                        "surface-tint": "#ffb692",
+                        "secondary-fixed-dim": "#00daf3",
+                        "on-primary": "#562000",
+                        "surface-container": "#291d17",
+                        "on-primary-container": "#ff7216",
+                        "inverse-on-surface": "#3b2d27",
+                        "surface-bright": "#453630",
+                        "on-tertiary": "#392f22",
+                        "surface": "#1c110c",
+                        "primary-fixed-dim": "#ffb692",
+                        "secondary": "#bdf4ff",
+                        "primary-container": "#5b2200",
+                        "surface-variant": "#40322c",
+                        "on-tertiary-fixed-variant": "#504538",
+                        "error": "#ffb4ab",
+                        "on-surface": "#f5ded5",
+                        "primary-fixed": "#ffdbcb",
+                        "on-secondary-fixed-variant": "#004f58",
+                        "surface-container-high": "#342721",
+                        "background": "#1c110c",
+                        "tertiary-fixed-dim": "#d4c4b2",
+                        "on-tertiary-container": "#a99a89",
+                        "on-background": "#f5ded5",
+                        "surface-container-low": "#251913",
+                        "on-secondary-container": "#00616d",
+                        "outline-variant": "#504440",
+                        "inverse-surface": "#f5ded5",
+                        "on-error-container": "#ffdad6",
+                        "primary": "#ffb692",
+                        "on-secondary-fixed": "#001f24"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {},
+                    "fontFamily": {
+                        "headline": ["Epilogue"],
+                        "body": ["Plus Jakarta Sans"],
+                        "label": ["Plus Jakarta Sans"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .splatter-bg {
+            background-image: radial-gradient(circle at 20% 30%, rgba(255, 182, 146, 0.05) 0%, transparent 40%),
+                              radial-gradient(circle at 80% 70%, rgba(0, 227, 253, 0.05) 0%, transparent 40%);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body antialiased min-h-screen splatter-bg selection:bg-secondary-container selection:text-on-secondary-container overflow-x-hidden flex flex-col md:flex-row">
+<!-- TopAppBar (Web) -->
+<nav class="hidden md:flex justify-between items-center px-8 py-6 w-full bg-[#1c110c]/90 backdrop-blur-md docked full-width top-0 z-50 shadow-[0_20px_40px_-10px_rgba(0,0,0,0.3)] fixed">
+<div class="flex items-center gap-12">
+<div class="text-3xl font-black italic text-[#ffb692] drop-shadow-[2px_2px_0px_#00e3fd] font-['Epilogue'] tracking-tighter uppercase">THE SONIC ROAST</div>
+<div class="flex gap-8 font-['Epilogue'] font-black uppercase tracking-tighter">
+<a class="text-[#00e3fd] underline decoration-4 underline-offset-8 hover:scale-105 transition-all duration-200 active:scale-95" href="#">Archive</a>
+<a class="text-[#ffb692]/80 hover:text-[#00e3fd] hover:scale-105 transition-all duration-200 active:scale-95" href="#">Brew Guides</a>
+<a class="text-[#ffb692]/80 hover:text-[#00e3fd] hover:scale-105 transition-all duration-200 active:scale-95" href="#">About</a>
+<a class="text-[#ffb692]/80 hover:text-[#00e3fd] hover:scale-105 transition-all duration-200 active:scale-95" href="#">Shop</a>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<button class="text-[#ffb692]/80 hover:text-[#00e3fd] hover:scale-105 transition-all duration-200 active:scale-95 flex items-center justify-center">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">rss_feed</span>
+</button>
+<button class="text-[#ffb692]/80 hover:text-[#00e3fd] hover:scale-105 transition-all duration-200 active:scale-95 flex items-center justify-center">
+<span class="material-symbols-outlined">search</span>
+</button>
+<button class="bg-primary-container text-on-primary-container font-headline font-black uppercase tracking-widest px-6 py-3 rounded-full hover:scale-105 transition-all duration-200 active:scale-95 shadow-[0_4px_20px_rgba(255,114,22,0.3)] hover:shadow-[0_4px_25px_rgba(255,114,22,0.5)]">
+                Subscribe
+            </button>
+</div>
+<div class="absolute bottom-0 left-0 bg-[#2a1a14] h-[2px] w-full"></div>
+</nav>
+<!-- SideNavBar (Optional, replacing TopAppBar for a heavier brutalist feel if desired, but sticking to TopAppBar for Web as requested by general rules, maybe a hybrid layout. The prompt asked for TopAppBar, SideNavBar, BottomNavBar. Let's use TopAppBar for top web, Side for left web if we wanted, but the prompt says TopAppBar. Let's stick to Top for Web, Bottom for Mobile.) -->
+<!-- Main Content Canvas -->
+<main class="flex-1 pt-28 md:pt-36 pb-24 px-4 md:px-8 max-w-7xl mx-auto w-full relative">
+<!-- Background organic shapes -->
+<div class="absolute top-20 right-[-10%] w-[500px] h-[500px] bg-primary/5 rounded-full blur-[100px] -z-10 mix-blend-screen pointer-events-none"></div>
+<div class="absolute top-[40%] left-[-20%] w-[600px] h-[600px] bg-secondary-container/5 rounded-full blur-[120px] -z-10 mix-blend-screen pointer-events-none"></div>
+<!-- Header Section -->
+<div class="mb-16 md:mb-24 relative">
+<h1 class="font-headline font-black text-6xl md:text-8xl lg:text-[7rem] leading-none tracking-tighter uppercase text-primary drop-shadow-[4px_4px_0px_#00e3fd] mb-6 select-none mix-blend-plus-lighter">
+                The <br class="md:hidden"/>Archive
+            </h1>
+<p class="font-body text-xl md:text-2xl text-on-surface-variant max-w-2xl font-light">
+                Deep cuts, dark roasts, and over-caffeinated conversations. Search the vault.
+            </p>
+</div>
+<!-- Search & Filter Controls -->
+<div class="bg-surface-container-low rounded-xl p-6 md:p-8 mb-16 flex flex-col xl:flex-row gap-8 items-start xl:items-center relative z-10 before:absolute before:inset-0 before:bg-gradient-to-br before:from-primary/5 before:to-transparent before:rounded-xl before:-z-10">
+<!-- Search Bar -->
+<div class="w-full xl:w-1/3 relative group">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-primary group-focus-within:text-secondary-container transition-colors">search</span>
+<input class="w-full bg-surface-container-highest border-b-2 border-transparent focus:border-primary focus:ring-0 rounded-t-sm px-12 py-4 text-on-surface font-body font-medium placeholder:text-on-surface-variant/50 transition-all outline-none" placeholder="Search episodes, guests..." type="text"/>
+</div>
+<!-- Filters -->
+<div class="flex-1 w-full flex flex-col sm:flex-row gap-6">
+<!-- Filter Group: Roast Level -->
+<div class="flex-1">
+<label class="font-body text-xs font-bold uppercase tracking-[0.05em] text-on-surface-variant mb-3 block">Roast Level</label>
+<div class="flex flex-wrap gap-2">
+<button class="bg-secondary-container text-on-secondary-container font-bold text-sm px-4 py-2 rounded-full hover:scale-105 active:scale-95 transition-all">All</button>
+<button class="bg-surface-container text-on-surface font-medium text-sm px-4 py-2 rounded-full hover:bg-surface-container-high transition-colors outline outline-1 outline-outline-variant/15">Light</button>
+<button class="bg-surface-container text-on-surface font-medium text-sm px-4 py-2 rounded-full hover:bg-surface-container-high transition-colors outline outline-1 outline-outline-variant/15">Medium</button>
+<button class="bg-surface-container text-on-surface font-medium text-sm px-4 py-2 rounded-full hover:bg-surface-container-high transition-colors outline outline-1 outline-outline-variant/15">Dark</button>
+<button class="bg-surface-container text-on-surface font-medium text-sm px-4 py-2 rounded-full hover:bg-surface-container-high transition-colors outline outline-1 outline-outline-variant/15 border border-primary/20">Espresso</button>
+</div>
+</div>
+<!-- Filter Group: Brew Method -->
+<div class="flex-1">
+<label class="font-body text-xs font-bold uppercase tracking-[0.05em] text-on-surface-variant mb-3 block">Brew Method</label>
+<div class="flex flex-wrap gap-2">
+<button class="bg-secondary-container text-on-secondary-container font-bold text-sm px-4 py-2 rounded-full hover:scale-105 active:scale-95 transition-all">All</button>
+<button class="bg-surface-container text-on-surface font-medium text-sm px-4 py-2 rounded-full hover:bg-surface-container-high transition-colors outline outline-1 outline-outline-variant/15">Pour Over</button>
+<button class="bg-surface-container text-on-surface font-medium text-sm px-4 py-2 rounded-full hover:bg-surface-container-high transition-colors outline outline-1 outline-outline-variant/15">French Press</button>
+<button class="bg-surface-container text-on-surface font-medium text-sm px-4 py-2 rounded-full hover:bg-surface-container-high transition-colors outline outline-1 outline-outline-variant/15">Cold Brew</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Archive Grid (Bento/Asymmetric Layout) -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 auto-rows-[250px]">
+<!-- Featured Episode (Spans large area) -->
+<article class="md:col-span-8 md:row-span-2 bg-surface-container-high rounded-xl relative overflow-hidden group flex flex-col justify-end p-8 isolate outline outline-1 outline-outline-variant/15">
+<img alt="" class="absolute inset-0 w-full h-full object-cover -z-20 opacity-40 group-hover:opacity-50 group-hover:scale-105 transition-all duration-700" data-alt="close-up of pouring rich dark coffee from an industrial metal kettle into a glass carafe, moody dramatic lighting with steam rising, warm brown and black tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKJN14RMHmzKowpKqhh6CnRQidLylBC7FOLzFi5kZmGn5YYsBSWJtRzDvKQXcHgvPF3UtRUUoFKWv60BI6pkAcIMMzDP3W8u5xHYiE3Dapcu4o18TAtNKQXgPlw8e_Ibs9ikW7VvvuG5w4WjEAOmm6nQWgC8MmQ1MtvBx2HBALihIi2YxmiU5Neb9xDkmqV5psGc8SimlqaeVj0oYhhwuqJePd1mWcrPnBH_8elYzIs4dHTBBD30Eft6lQPC7HsLKDjBTpt_DQaDpP"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-dim via-surface/80 to-transparent -z-10"></div>
+<div class="absolute top-6 left-6 flex gap-2">
+<span class="bg-primary/90 text-on-primary-container font-bold text-xs uppercase tracking-widest px-3 py-1 rounded-sm backdrop-blur-md">EP. 142</span>
+<span class="bg-secondary-container/90 text-on-secondary-container font-bold text-xs uppercase tracking-widest px-3 py-1 rounded-sm backdrop-blur-md">Espresso</span>
+</div>
+<button class="absolute top-6 right-6 w-14 h-14 bg-secondary-container rounded-full flex items-center justify-center text-on-secondary-container shadow-[0_0_40px_rgba(0,227,253,0.3)] hover:scale-110 active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</button>
+<div class="mt-auto max-w-2xl">
+<h2 class="font-headline font-black text-4xl md:text-5xl text-on-surface mb-4 leading-tight group-hover:text-primary transition-colors">The Perfect Crema: Myth or Math?</h2>
+<p class="font-body text-on-surface-variant text-lg mb-6 line-clamp-2">We dive deep into the thermodynamics of espresso extraction with guest barista champion Sarah Jenkins. Is the crema really the best part?</p>
+<div class="flex items-center gap-4 text-sm font-bold text-on-surface-variant uppercase tracking-widest">
+<span><span class="material-symbols-outlined text-base align-middle mr-1 text-primary">schedule</span> 1H 12M</span>
+<span class="w-1 h-1 bg-outline-variant rounded-full"></span>
+<span>OCT 24, 2023</span>
+</div>
+</div>
+</article>
+<!-- Standard Card -->
+<article class="md:col-span-4 md:row-span-1 bg-surface-container-low rounded-xl p-6 relative overflow-hidden group outline outline-1 outline-outline-variant/15 flex flex-col hover:bg-surface-container transition-colors">
+<div class="flex justify-between items-start mb-4">
+<span class="bg-surface-bright text-on-surface font-bold text-[10px] uppercase tracking-widest px-2 py-1 rounded-sm">EP. 141</span>
+<span class="text-xs font-bold text-secondary-container uppercase tracking-widest">Pour Over</span>
+</div>
+<h3 class="font-headline font-black text-2xl text-on-surface mb-2 group-hover:text-primary transition-colors leading-tight">V60 vs. Chemex Showdown</h3>
+<p class="font-body text-on-surface-variant text-sm line-clamp-2 flex-1">Filter paper wars. We taste test blindly to see which brewer reigns supreme for light roasts.</p>
+<div class="flex justify-between items-center mt-4 pt-4 relative before:absolute before:top-0 before:left-0 before:w-full before:h-px before:bg-outline-variant/15">
+<span class="text-xs font-bold text-on-surface-variant uppercase tracking-widest">45 MIN</span>
+<button class="text-primary hover:text-secondary-container hover:scale-110 active:scale-95 transition-all">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">play_circle</span>
+</button>
+</div>
+</article>
+<!-- Visualizer Card (Audio focus) -->
+<article class="md:col-span-4 md:row-span-1 bg-primary text-on-primary-container rounded-lg p-6 relative overflow-hidden group hover:-translate-y-1 transition-transform">
+<div class="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_right,_var(--tw-gradient-stops))] from-primary-container/40 to-transparent -z-10 pointer-events-none"></div>
+<div class="flex justify-between items-start mb-4">
+<span class="bg-surface/20 text-on-primary-container font-bold text-[10px] uppercase tracking-widest px-2 py-1 rounded-sm">EP. 140</span>
+<span class="text-xs font-black text-surface uppercase tracking-widest bg-secondary-container px-2 py-1 rounded-sm rotate-3">Dark Roast</span>
+</div>
+<h3 class="font-headline font-black text-2xl mb-2 leading-tight">Midnight Roasting Mistakes</h3>
+<!-- Abstract Audio Waveform graphic -->
+<div class="mt-auto flex items-end gap-1 h-12 pt-4">
+<div class="w-2 bg-on-primary-container rounded-t-sm h-[30%] group-hover:h-[60%] transition-all duration-300"></div>
+<div class="w-2 bg-on-primary-container rounded-t-sm h-[70%] group-hover:h-[40%] transition-all duration-300 delay-75"></div>
+<div class="w-2 bg-on-primary-container rounded-t-sm h-[100%] group-hover:h-[80%] transition-all duration-300 delay-100"></div>
+<div class="w-2 bg-on-primary-container rounded-t-sm h-[50%] group-hover:h-[90%] transition-all duration-300 delay-150"></div>
+<div class="w-2 bg-on-primary-container rounded-t-sm h-[80%] group-hover:h-[30%] transition-all duration-300 delay-200"></div>
+<div class="w-2 bg-on-primary-container rounded-t-sm h-[40%] group-hover:h-[70%] transition-all duration-300 delay-75"></div>
+<div class="flex-1 flex justify-end items-end pb-1">
+<button class="bg-on-primary-container text-primary rounded-full w-8 h-8 flex items-center justify-center hover:scale-110 active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Tall Card -->
+<article class="md:col-span-4 md:row-span-2 bg-surface-container-low rounded-xl relative overflow-hidden group p-6 isolate outline outline-1 outline-outline-variant/15 flex flex-col justify-between">
+<img alt="" class="absolute inset-0 w-full h-full object-cover -z-20 opacity-30 group-hover:opacity-40 group-hover:scale-105 transition-all duration-700 mix-blend-luminosity" data-alt="vintage analog audio mixing board with knobs and sliders, low key lighting, warm amber glow on metallic surfaces" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBquqFcrPXLkzqGVRCHxOlj5lJIIM7XVTq_29v-5ieXMgn1lND8HK8GyRgAEmAwOjxwDQiQPv1uHGHXqnwQEPneyL2C9yL891FvtZzryzUs0MBzqt6mZOsiNDHLbFi0KRJk3HWAdX2L3gMGoz1tCjqDlw9CIMGnfiSXSAntmRnqyhjV655WSqZnyyA3pK3zCkKR3vItGpkcJRRRp-QtwdB-IqAuiOY7Et7LeT2KcSWeOIMGKcDeSDS3AVvJU1h2SoTSrQZu-Y222jAE"/>
+<div class="absolute inset-0 bg-surface-dim/80 -z-10 group-hover:bg-surface-dim/70 transition-colors"></div>
+<div>
+<div class="flex gap-2 mb-6">
+<span class="bg-surface-container border border-primary/30 text-primary font-bold text-[10px] uppercase tracking-widest px-2 py-1 rounded-sm">EP. 139</span>
+<span class="bg-surface-container border border-secondary-container/30 text-secondary-container font-bold text-[10px] uppercase tracking-widest px-2 py-1 rounded-sm">Tech</span>
+</div>
+<h3 class="font-headline font-black text-3xl text-on-surface mb-4 leading-tight">The Analog Audio Setup</h3>
+<p class="font-body text-on-surface-variant text-base mb-6">Behind the scenes of how we record the roast. Tubes, preamps, and unnecessary gear.</p>
+</div>
+<div class="bg-surface-container/90 backdrop-blur-md rounded-lg p-4 flex items-center gap-4 mt-auto">
+<button class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-on-primary-container flex-shrink-0 hover:scale-105 active:scale-95 transition-transform">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</button>
+<div class="flex-1">
+<div class="h-1 bg-surface-bright rounded-full w-full relative">
+<div class="absolute top-0 left-0 h-full bg-secondary-container rounded-full w-[0%]"></div>
+</div>
+<div class="flex justify-between mt-2 text-[10px] font-bold text-on-surface-variant tracking-widest uppercase">
+<span>0:00</span>
+<span>58 MIN</span>
+</div>
+</div>
+</div>
+</article>
+<!-- Standard Card -->
+<article class="md:col-span-4 md:row-span-1 bg-surface-container-low rounded-[2rem] p-6 relative overflow-hidden group outline outline-1 outline-outline-variant/15 flex flex-col hover:bg-surface-container transition-colors">
+<div class="flex justify-between items-start mb-4">
+<span class="bg-surface-bright text-on-surface font-bold text-[10px] uppercase tracking-widest px-2 py-1 rounded-sm">EP. 138</span>
+<span class="text-xs font-bold text-secondary-container uppercase tracking-widest">Cold Brew</span>
+</div>
+<h3 class="font-headline font-black text-2xl text-on-surface mb-2 group-hover:text-primary transition-colors leading-tight">Cold Brew vs Iced Coffee</h3>
+<p class="font-body text-on-surface-variant text-sm line-clamp-2 flex-1">Settling the debate once and for all. It's more than just temperature.</p>
+<div class="flex justify-between items-center mt-4 pt-4 relative before:absolute before:top-0 before:left-0 before:w-full before:h-px before:bg-outline-variant/15">
+<span class="text-xs font-bold text-on-surface-variant uppercase tracking-widest">35 MIN</span>
+<button class="text-primary hover:text-secondary-container hover:scale-110 active:scale-95 transition-all">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">play_circle</span>
+</button>
+</div>
+</article>
+<!-- Standard Card -->
+<article class="md:col-span-4 md:row-span-1 bg-surface-container-low rounded-xl p-6 relative overflow-hidden group outline outline-1 outline-outline-variant/15 flex flex-col hover:bg-surface-container transition-colors">
+<div class="absolute right-0 top-0 w-32 h-32 bg-primary/10 rounded-bl-full -z-10 group-hover:bg-primary/20 transition-colors"></div>
+<div class="flex justify-between items-start mb-4">
+<span class="bg-surface-bright text-on-surface font-bold text-[10px] uppercase tracking-widest px-2 py-1 rounded-sm">EP. 137</span>
+<span class="text-xs font-bold text-secondary-container uppercase tracking-widest">Light Roast</span>
+</div>
+<h3 class="font-headline font-black text-2xl text-on-surface mb-2 group-hover:text-primary transition-colors leading-tight">Fruity Pebbles in my Cup</h3>
+<p class="font-body text-on-surface-variant text-sm line-clamp-2 flex-1">Exploring the extreme end of naturally processed Ethiopian coffees.</p>
+<div class="flex justify-between items-center mt-4 pt-4 relative before:absolute before:top-0 before:left-0 before:w-full before:h-px before:bg-outline-variant/15">
+<span class="text-xs font-bold text-on-surface-variant uppercase tracking-widest">1H 05M</span>
+<button class="text-primary hover:text-secondary-container hover:scale-110 active:scale-95 transition-all">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">play_circle</span>
+</button>
+</div>
+</article>
+</div>
+<!-- Load More -->
+<div class="mt-16 flex justify-center">
+<button class="bg-surface-container-high text-on-surface font-headline font-black uppercase tracking-widest px-8 py-4 rounded-full hover:bg-surface-container-highest hover:text-primary active:scale-95 transition-all outline outline-1 outline-outline-variant/15 hover:outline-primary/50 shadow-sm flex items-center gap-2">
+                Load More Drops <span class="material-symbols-outlined text-sm">arrow_downward</span>
+</button>
+</div>
+</main>
+<!-- BottomNavBar (Mobile) -->
+<nav class="md:hidden bg-[#2a1a14]/95 backdrop-blur-2xl docked full-width bottom-0 rounded-t-[2.5rem] border-t-2 border-[#ffb692]/20 shadow-[0_-10px_30px_rgba(0,0,0,0.5)] fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-3 pb-safe">
+<a class="flex flex-col items-center justify-center text-[#ffb692]/50 hover:text-[#00e3fd]" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="font-['Plus_Jakarta_Sans'] font-bold text-[10px] uppercase mt-1">Home</span>
+</a>
+<!-- Active Tab -->
+<a class="flex flex-col items-center justify-center bg-[#ffb692] text-[#1c110c] rounded-full p-3 w-16 h-16 -mt-8 shadow-[0_0_20px_#ffb692] animate-pulse-slow" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">library_music</span>
+<span class="font-['Plus_Jakarta_Sans'] font-bold text-[10px] uppercase mt-1 hidden">Archive</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#ffb692]/50 hover:text-[#00e3fd]" href="#">
+<span class="material-symbols-outlined">graphic_eq</span>
+<span class="font-['Plus_Jakarta_Sans'] font-bold text-[10px] uppercase mt-1">Now Playing</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#ffb692]/50 hover:text-[#00e3fd]" href="#">
+<span class="material-symbols-outlined">info</span>
+<span class="font-['Plus_Jakarta_Sans'] font-bold text-[10px] uppercase mt-1">About</span>
+</a>
+</nav>
+</body></html>
