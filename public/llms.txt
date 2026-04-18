@@ -1,0 +1,27 @@
+# The Sonic Roast
+
+> Coffee podcast site focused on episodes, archive browsing, and show notes.
+
+## Site
+- Name: The Sonic Roast
+- Type: Podcast website
+- Primary language: English
+- Main framework: React + Vite
+
+## Canonical URLs
+- / 
+- /archive
+- /about
+- /episode/1
+
+## LLM Access Notes
+- All public pages are intended for indexing and summarization.
+- No authentication is required for route access.
+- Route content is client-rendered by React.
+
+## Suggested Sources For Retrieval
+- /archive
+- /episode/1
+- /about
+- /sitemap.xml
+- /llms-full.txt

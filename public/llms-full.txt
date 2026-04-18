@@ -1,0 +1,25 @@
+# The Sonic Roast - Full LLM Context
+
+The Sonic Roast is a coffee podcast website.
+
+## What This Site Contains
+- Homepage with latest episode highlight and recent episodes.
+- Archive page with episode cards and filtering UI.
+- Episode page with show notes, timestamps, and audio player UI.
+- About page with team and mission details.
+
+## Key Routes
+- / : Landing page and highlighted content.
+- /archive : Archive browsing for episodes.
+- /episode/1 : Episode detail view currently linked by the site UI.
+- /about : Team and mission information.
+
+## Content Intent
+This site is intended to be discoverable by search bots and LLM-based retrieval systems.
+
+## Crawl Policy Summary
+Refer to /robots.txt for crawler rules.
+
+## Machine-Readable Indexes
+- /sitemap.xml
+- /llms.txt

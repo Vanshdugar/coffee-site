@@ -1,0 +1,29 @@
+User-agent: *
+Allow: /
+
+# AI and search crawler hints
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# Update this to your production domain
+Sitemap: https://sonic-roast.example/sitemap.xml
+
+# LLM discovery files
+# Some crawlers may use these as additional hints
+# Update domain if needed
+# llms.txt is also available at /llms.txt

@@ -1,0 +1,8 @@
+# AI crawler hint file
+# Canonical crawler policy is in /robots.txt
+# Canonical llm docs are in /llms.txt and /llms-full.txt
+
+allow: /
+llms: /llms.txt
+llms-full: /llms-full.txt
+sitemap: /sitemap.xml

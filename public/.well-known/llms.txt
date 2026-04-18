@@ -1,0 +1,4 @@
+# The Sonic Roast
+
+See canonical LLM file at /llms.txt
+See extended context at /llms-full.txt
